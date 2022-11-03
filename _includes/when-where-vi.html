@@ -1,0 +1,51 @@
+<div id="pg-8-3" class="panel-grid panel-has-style" style="padding: 1em;">
+  <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-8-3" data-stretch-type="full" id="events"
+    data-nulmart-anchor="events"
+    style="border-left: 0px none; border-right: 0px none;">
+    <div id="pgc-8-3-0" class="panel-grid-cell">
+      <div id="panel-8-3-0-0" class="so-panel widget widget_nulmart-sow-section-heading panel-first-child"
+        data-index="5">
+        <div class="nulmart-animation-fade-in panel-widget-style nulmart-animate">
+          <div
+            class="so-widget-nulmart-sow-section-heading so-widget-nulmart-sow-section-heading-default-d75171398898-7">
+            <header class="nulmart-sow-section-header align-center">
+              <h2 class="nulmart-sow-section-heading typography-section-heading" style="color: #c8b4a0">
+                {{ site.info.vi.when_and_where_title }}
+              </h2>
+              <p class="nulmart-sow-section-subheading" style="color: #888888"></p>
+            </header>
+          </div>
+        </div>
+      </div>
+      <div id="panel-8-3-0-1" class="so-panel widget widget_nulmart-sow-events-grid panel-last-child" data-index="6">
+        <div class="so-widget-nulmart-sow-events-grid so-widget-nulmart-sow-events-grid-default-d75171398898-7">
+          <div class="nulmart-sow-events-grid nulmart-sow-events-grid-2-columns clear">
+            {% for event in site.info.vi.events %}
+            <div class="nulmart-sow-events-grid-item nulmart-animation-fade-in-up nulmart-animate {% if event.expanded %}full-width{% endif %}">
+              <div class="nulmart-sow-events-grid-item-wrapper" style="background-color: #ffffff">
+                <div class="nulmart-sow-events-grid-item-photo">
+                  <img src="{{ event.img }}" class="attachment-grid size-grid" alt="" loading="lazy"
+                    srcset="{{ event.img }} 540w,{{ event.img }} 300w,{{ event.img }} 768w,{{ event.img }} 1024w,{{ event.img }} 1080w"
+                    sizes="(max-width: 540px) 100vw, 540px" width="540" height="270">
+                </div>
+                <div class="nulmart-sow-events-grid-item-icon">
+                  <i class="{{ event.icon }} fa-3x"></i>
+                </div>
+                <h4 class="nulmart-sow-events-grid-item-title typography-heading">
+                  {{ event.title }}
+                </h4>
+                <div class="nulmart-sow-events-grid-item-description">
+                </div>
+                <div class="nulmart-sow-events-grid-item-summary">
+                  {{ event.summary }}
+                </div>
+              </div>
+            </div>
+            {% if event.expanded %}<div></div>{% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

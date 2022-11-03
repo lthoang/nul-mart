@@ -1,0 +1,79 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: "Hoàng + Trâm"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://lthoang.com" # the base hostname & protocol for your site, e.g. http://example.com
+info:
+  en:
+    groom_name: Lê Trung Hoàng
+    bride_name: Bùi Thị Phương Trâm
+    wedding_quote: Are getting married
+    wedding:
+      date: 01/01/2023
+      datetime: 2023/01/01 17:00:00
+    wedding_date: on 1 January, 2023
+    when_and_where_title: Events
+    wishes_title: Send us your wishes
+    wishes_menu: Wishes
+    events:
+      - title: Engagement Ceremony
+        summary: on 30 December, 2022
+        icon: fa-regular fa-heart
+        img: photos/20-11-2022-proposal-trong-lop.jpg
+        expanded: true
+      - title: Wedding Ceremony
+        summary: on 31 December, 2022
+        icon: fa-solid fa-martini-glass
+        img: photos/z3926603561123_ce2f579f69c030caf80ccef5e6991657.jpg
+      - title: Wedding Ceremony
+        summary: on 1 January, 2023
+        icon: fa-solid fa-martini-glass
+        img: photos/z3926603456166_b1164c7b5d2b93323601a293980d306a.jpg
+  vi:
+    groom_name: Lê Trung Hoàng
+    bride_name: Bùi Thị Phương Trâm
+    wedding_quote: Đã quyết định <br /><q>về một nhà</q>
+    wedding:
+      date: 01/01/2023
+      datetime: 2023/01/01 17:00:00
+    wedding_date: Ngày 01 tháng 01, năm 2023
+    when_and_where_title: Thời gian & sự kiện
+    wishes_title: Chúc phúc cho chúng mình nhé!
+    wishes_menu: Gửi lời chúc phúc
+    events:
+      - title: Lễ Đính Hôn
+        summary: Diễn ra vào ngày 30/12/2022
+        icon: fa-regular fa-heart
+        img: photos/20-11-2022-proposal-trong-lop.jpg
+        expanded: true
+      - title: Lễ Vu Quy
+        summary: Diễn ra vào ngày 31/12/2022
+        icon: fa-solid fa-martini-glass
+        img: photos/z3926603561123_ce2f579f69c030caf80ccef5e6991657.jpg
+      - title: Lễ Thành Hôn
+        summary: Diễn ra vào ngày 01/01/2023
+        icon: fa-solid fa-martini-glass
+        img: photos/z3926603456166_b1164c7b5d2b93323601a293980d306a.jpg
+
+banner_bg:
+  first_img: photos/IMG_4713.JPG
+  second_img: photos/z3926604596694_f3ebf8094a222d436983b285c022ca37.jpg
+  third_img: photos/IMG_8908.jpg

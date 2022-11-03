@@ -1,0 +1,52 @@
+<div id="pg-8-9" class="panel-grid panel-has-style">
+  <div id="gallery" data-nulmart-anchor="gallery" class="panel-row-style panel-row-style-for-8-9">
+    <div id="pgc-8-9-0" class="panel-grid-cell">
+      <div id="panel-8-9-0-0" class="so-panel widget widget_nulmart-sow-section-heading panel-first-child"
+        data-index="17">
+        <div class="nulmart-animation-fade-in panel-widget-style panel-widget-style-for-8-9-0-0 nulmart-animate">
+          <div
+            class="so-widget-nulmart-sow-section-heading so-widget-nulmart-sow-section-heading-default-d75171398898-8">
+            <header class="nulmart-sow-section-header align-center">
+              <h2 class="nulmart-sow-section-heading typography-section-heading" style="color: #dcc8b4">
+                {{ site.info.en.captured_moments_title }}
+              </h2>
+              <p class="nulmart-sow-section-subheading" style="color: #888888"></p>
+            </header>
+          </div>
+        </div>
+      </div>
+      <div id="panel-8-9-0-1" class="so-panel widget widget_nulmart-sow-gallery-grid panel-last-child" data-index="18">
+        <div class="nulmart-animation-fade-in-up panel-widget-style panel-widget-style-for-8-9-0-1 nulmart-animate">
+          <div class="so-widget-nulmart-sow-gallery-grid so-widget-nulmart-sow-gallery-grid-default-d75171398898-8">
+            <div class="nulmart-sow-gallery-grid">
+              <div class="nulmart-sow-gallery-grid-filters">
+                <a href="#" class="nulmart-sow-gallery-grid-filter active" data-filter="*"></a>
+
+                <!-- <a href="#" class="nulmart-sow-gallery-grid-filter"
+                                                    data-filter=".nulmart-sow-engagement">Engagement</a>
+                                                <a href="#" class="nulmart-sow-gallery-grid-filter"
+                                                    data-filter=".nulmart-sow-pre-wedding">Pre-Wedding</a>
+                                                <a href="#" class="nulmart-sow-gallery-grid-filter"
+                                                    data-filter=".nulmart-sow-withfriends">With
+                                                    Friends</a> -->
+              </div>
+
+              <div class="nulmart-sow-gallery-grid-items nulmart-sow-gallery-grid-4-columns lightgallery clear"
+                style="position: relative; height: 396.15px;">
+                {% for item in site.data.captured_moments %}
+                <div class="nulmart-sow-gallery-grid-item {{ item.category }}"
+                  style="position: absolute; left: 0px; top: 0px;">
+                  <a href="{{ item.url }}">
+                    <img src="{{ item.url }}" class="attachment-grid size-grid" alt="" loading="lazy"
+                      sizes="(max-width: 540px) 100vw, 540px" width="540" height="737">
+                  </a>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
